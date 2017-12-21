@@ -1,0 +1,23 @@
+{
+  "name": "todo-web-components",
+  "version": "1.0.0",
+  "description": "ToDo App made with WebComponents",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/time2hack/todo-web-components.git"
+  },
+  "keywords": [],
+  "author": "Pankaj Patel (http://pankaj.pro)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/time2hack/todo-web-components/issues"
+  },
+  "homepage": "https://github.com/time2hack/todo-web-components#readme",
+  "dependencies": {
+    "webpack": "^3.10.0"
+  }
+}
