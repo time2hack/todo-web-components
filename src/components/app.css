@@ -1,0 +1,17 @@
+:host {
+  display: block;
+}
+todo-form,
+todo-list {
+  display: block;
+}
+.card {
+  margin-top: 1rem;
+}
+.navbar-brand {
+  padding-bottom: 0;
+}
+.card.done {
+  text-decoration: line-through;
+  text-decoration-color: green;
+}

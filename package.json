@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/time2hack/todo-web-components#readme",
   "dependencies": {
+  },
+  "devDependencies": {
     "webpack": "^3.10.0"
   }
 }
