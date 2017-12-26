@@ -1,2 +1,4 @@
-import "@webcomponents/webcomponentsjs/custom-elements-es5-adapter";
-import "./components/app.component";
+import './components/app.component';
+
+const app = document.createElement('todo-application');
+document.querySelector('#app').appendChild(app);

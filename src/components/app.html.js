@@ -7,7 +7,7 @@ export default (scope) => `
   </div>
 </nav>
 <main class="container">
-  <todo-form ref="form"></todo-form>
+  <todo-form></todo-form>
   <hr/>
   <todo-list ref="list"></todo-list>
 </main>

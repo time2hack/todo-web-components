@@ -1,0 +1,22 @@
+[ref="text"] {
+  border: 1px solid #343a40;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+[ref="description"] {
+  border: 1px solid #343a40;
+  border-radius: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+[ref="btn-submit"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background: #eee;
+}
+todo-form .card {
+  border: 0;
+}
+todo-form .card .card-body{
+  padding: 0;
+}

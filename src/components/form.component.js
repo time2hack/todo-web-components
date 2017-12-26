@@ -1,11 +1,13 @@
 import template from './form.html';
+import css from './form.css';
 
 class Form extends HTMLElement {
   connectedCallback() {
 
   }
   render() {
-    this.innerHTML = template();
+    this.innerHTML = template({css});
+    console.log(css);
     this.refs = {
       text: this.querySelector('[ref="text"]'),
       form: this.querySelector('[ref="form"]'),

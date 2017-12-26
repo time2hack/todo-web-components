@@ -1,14 +1,12 @@
 import './form.component';
 import './todos.component';
 import template from './app.html';
-import './app.css';
+import css from './app.css';
 const tasks = {};
 class Counter extends HTMLElement {
   connectedCallback() {
     this.dom = this.attachShadow({ mode: 'open' });
-    // console.log(css);
-    this.dom.innerHTML = template({ title: 'ToDo App', css: '' });
-    console.log(this.dom)
+    this.dom.innerHTML = template({ title: 'ToDo App', css });
     this.refs = {
       form: this.dom.querySelector('todo-form'),
       list: this.dom.querySelector('todo-list'),
@@ -20,10 +18,10 @@ class Counter extends HTMLElement {
       tasks,
       actions: {
         remove: (id) => {
-
+          console.log(id)
         },
         done: (id) => {
-
+          console.log(id)
         }
       }
     }

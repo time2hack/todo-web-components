@@ -4,7 +4,8 @@
   "description": "ToDo App made with WebComponents",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,14 @@
   },
   "homepage": "https://github.com/time2hack/todo-web-components#readme",
   "dependencies": {
+    "@webcomponents/webcomponentsjs": "^1.0.22"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.36",
+    "@babel/preset-env": "^7.0.0-beta.36",
+    "babel-loader": "^8.0.0-beta.0",
+    "html-webpack-plugin": "^2.30.1",
+    "raw-loader": "^0.5.1",
     "webpack": "^3.10.0"
   }
 }
