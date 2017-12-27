@@ -1,0 +1,12 @@
+.done {
+  text-decoration: line-through;
+}
+.btn-not-done {
+  display: none;
+}
+.done .btn-done {
+  display: none;
+}
+.done .btn-not-done {
+  display: inline-block;
+}

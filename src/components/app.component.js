@@ -3,6 +3,10 @@ import './todos.component';
 import template from './app.html';
 import css from './app.css';
 const tasks = {};
+const actions = [ 'Done', 'Not Done',
+  { label: 'Remove', classNames: ['float-right'] }
+];
+
 class Counter extends HTMLElement {
   connectedCallback() {
     this.dom = this.attachShadow({ mode: 'open' });
@@ -18,10 +22,10 @@ class Counter extends HTMLElement {
       tasks,
       actions: {
         remove: (id) => {
-          console.log(id)
+          delete tasks[id];
         },
         done: (id) => {
-          console.log(id)
+          tasks[id].done = !tasks[id].done;
         }
       }
     }
@@ -31,7 +35,7 @@ class Counter extends HTMLElement {
   addTask(task) {
     const createdOn = new Date();
     const id = `task-${+createdOn}`;
-    tasks[id] = Object.assign({}, task, { id, createdOn });
+    tasks[id] = Object.assign({}, task, { id, createdOn, done: false, actions});
     this.refs.list.render(tasks);
   }
 }

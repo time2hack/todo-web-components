@@ -7,7 +7,7 @@ class Form extends HTMLElement {
   }
   render() {
     this.innerHTML = template({css});
-    console.log(css);
+    
     this.refs = {
       text: this.querySelector('[ref="text"]'),
       form: this.querySelector('[ref="form"]'),

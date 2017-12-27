@@ -33,6 +33,7 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin({
       sourceMap: true
     }),
+    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({ template: path.join(__dirname, 'src', 'index.html') })
   ]
 };
