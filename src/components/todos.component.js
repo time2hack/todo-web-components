@@ -33,7 +33,7 @@ class List extends HTMLElement {
     this.list.appendChild(taskEl);
     taskEl.render(task);
   }
-  render(tasks = {}) {
+  render(tasks = this.props.tasks || {}) {
     Object.keys(tasks).forEach(key => {
       const task = tasks[key]
       this.createAndAppend(task);
