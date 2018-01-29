@@ -1,6 +1,6 @@
 export default (scope) => `
-<div class="card">
-  <div class="card-body ${scope.done ? 'done' : ''}">
+<div class="card ${scope.done ? 'done' : ''}">
+  <div class="card-body">
     ${scope.text ? `<h4 class="card-title">${scope.text}</h4>` : ''}
     ${scope.description ? `<p class="card-text">${scope.description}</p>` : ''}
     ${(scope.actions || []).map((act) => {
