@@ -11,7 +11,7 @@ const tasks = {
     description: `<a href="https://time2hack.com/2017/12/introduction-to-webcomponents-and-shadowdom/"
       target="_blank">https://time2hack.com/2017/12/introduction-to-webcomponents-and-shadowdom/</a>`,
   },
-  'copm-2': { done: false, id: 'comp-2', actions,
+  'comp-2': { done: false, id: 'comp-2', actions,
     text: 'ToDo App with WebComponents',
     description: `<a href="https://time2hack.com/2018/01/todo-app-with-webcomponents-shadowdom/"
       target="_blank">https://time2hack.com/2018/01/todo-app-with-webcomponents-shadowdom/</a>`,
