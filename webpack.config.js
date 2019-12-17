@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -30,9 +31,14 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true
-    }),
+    new CopyPlugin([
+      {
+        from: path.resolve('src', 'index.html'),
+        to: 'index.html',
+        force: true
+      }
+    ]),
+    new webpack.ProgressPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({ template: path.join(__dirname, 'src', 'index.html') })
   ]

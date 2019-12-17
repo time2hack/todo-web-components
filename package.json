@@ -13,22 +13,24 @@
     "url": "git+https://github.com/time2hack/todo-web-components.git"
   },
   "keywords": [],
-  "author": "Pankaj Patel (http://pankaj.pro)",
+  "author": "Pankaj Patel (https://pankaj.pro)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/time2hack/todo-web-components/issues"
   },
   "homepage": "https://github.com/time2hack/todo-web-components#readme",
   "dependencies": {
-    "@webcomponents/webcomponentsjs": "^1.0.22"
+    "@webcomponents/webcomponentsjs": "^1.3.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.36",
-    "@babel/preset-env": "^7.0.0-beta.36",
-    "babel-loader": "^8.0.0-beta.0",
-    "html-webpack-plugin": "^2.30.1",
-    "raw-loader": "^0.5.1",
-    "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.9.7"
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "raw-loader": "^4.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }
